@@ -1,6 +1,6 @@
 # ggwave-objc
 
-Minimal Objective-C app for iOS using ggwave
+Minimal Objective-C app for iOS using [ggwave](https://github.com/ggerganov/ggwave)
 
 <p float="left">
   <img src="https://user-images.githubusercontent.com/1991296/115956060-62712800-a503-11eb-96dc-3865effca332.png" width="30%" />
