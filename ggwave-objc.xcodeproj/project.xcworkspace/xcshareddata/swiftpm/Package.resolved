@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ggwave",
+        "repositoryURL": "https://github.com/ggerganov/ggwave-spm",
+        "state": {
+          "branch": null,
+          "revision": "c3bf3489f51c320954b45d6d295c030aa636dadf",
+          "version": "0.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

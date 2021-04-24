@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BI9-HV-ggo">
+                                <rect key="frame" x="39" y="199" width="156" height="34"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <state key="normal" title="Start Capturing">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleCapture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Pg-QD-6Ed"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status: Idle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGv-CU-kQ0">
+                                <rect key="frame" x="39" y="113" width="232" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9B1-Ta-tyQ">
+                                <rect key="frame" x="39" y="361" width="156" height="34"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <state key="normal" title="Send Message">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="togglePlayback:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQt-5O-x1i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Received:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa3-2h-Fr3">
+                                <rect key="frame" x="39" y="155" width="355" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="sLX-aE-Ngk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status: Idle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0m-qh-rgI">
+                                <rect key="frame" x="39" y="270" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message to send:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qp-ij-OPW">
+                                <rect key="frame" x="39" y="313" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0qp-ij-OPW" secondAttribute="trailing" constant="95" id="3yw-Xh-D7k"/>
+                            <constraint firstItem="Sa3-2h-Fr3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6wN-kj-sg4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aGv-CU-kQ0" secondAttribute="trailing" constant="143" id="6xh-Id-JlC"/>
+                            <constraint firstItem="9B1-Ta-tyQ" firstAttribute="top" secondItem="0qp-ij-OPW" secondAttribute="bottom" constant="27" id="7Wv-T8-dMe"/>
+                            <constraint firstItem="9B1-Ta-tyQ" firstAttribute="trailing" secondItem="BI9-HV-ggo" secondAttribute="trailing" id="Bts-yz-WXp"/>
+                            <constraint firstItem="0qp-ij-OPW" firstAttribute="leading" secondItem="9B1-Ta-tyQ" secondAttribute="leading" id="DnV-sQ-haR"/>
+                            <constraint firstItem="aGv-CU-kQ0" firstAttribute="leading" secondItem="Sa3-2h-Fr3" secondAttribute="leading" id="KKC-MG-JEI"/>
+                            <constraint firstItem="Q0m-qh-rgI" firstAttribute="top" secondItem="BI9-HV-ggo" secondAttribute="bottom" constant="37" id="Kky-xT-4dW"/>
+                            <constraint firstItem="Q0m-qh-rgI" firstAttribute="leading" secondItem="BI9-HV-ggo" secondAttribute="leading" id="L5m-et-35h"/>
+                            <constraint firstItem="BI9-HV-ggo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="LYc-e6-foR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BI9-HV-ggo" secondAttribute="trailing" constant="219" id="QKQ-ji-5q3"/>
+                            <constraint firstItem="aGv-CU-kQ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="U07-J1-jjq"/>
+                            <constraint firstItem="Sa3-2h-Fr3" firstAttribute="top" secondItem="aGv-CU-kQ0" secondAttribute="bottom" constant="21" id="U8T-s6-Caz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q0m-qh-rgI" secondAttribute="trailing" constant="149" id="UXC-GN-YV1"/>
+                            <constraint firstItem="Q0m-qh-rgI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="aq0-ln-1Xd"/>
+                            <constraint firstItem="0qp-ij-OPW" firstAttribute="top" secondItem="Q0m-qh-rgI" secondAttribute="bottom" constant="22" id="dvg-uW-DdW"/>
+                            <constraint firstItem="Q0m-qh-rgI" firstAttribute="leading" secondItem="0qp-ij-OPW" secondAttribute="leading" id="fJe-tf-rXh"/>
+                            <constraint firstItem="BI9-HV-ggo" firstAttribute="top" secondItem="Sa3-2h-Fr3" secondAttribute="bottom" constant="16" id="gWl-Li-4RV"/>
+                            <constraint firstItem="aGv-CU-kQ0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="w4K-FS-oZW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonToggleCapture" destination="BI9-HV-ggo" id="GCc-q5-lij"/>
+                        <outlet property="labelMessageToSend" destination="0qp-ij-OPW" id="5T5-6e-HgZ"/>
+                        <outlet property="labelReceived" destination="Sa3-2h-Fr3" id="ZPE-fd-FZH"/>
+                        <outlet property="labelStatusInp" destination="aGv-CU-kQ0" id="7AS-3p-bVr"/>
+                        <outlet property="labelStatusOut" destination="Q0m-qh-rgI" id="bcW-vv-uG1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

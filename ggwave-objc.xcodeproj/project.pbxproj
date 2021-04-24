@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187DC34926340BE60049F4BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC34826340BE60049F4BF /* AppDelegate.m */; };
+		187DC34C26340BE60049F4BF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC34B26340BE60049F4BF /* SceneDelegate.m */; };
+		187DC34F26340BE60049F4BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC34E26340BE60049F4BF /* ViewController.m */; };
+		187DC35226340BE60049F4BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187DC35026340BE60049F4BF /* Main.storyboard */; };
+		187DC35426340BE90049F4BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187DC35326340BE90049F4BF /* Assets.xcassets */; };
+		187DC35726340BE90049F4BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187DC35526340BE90049F4BF /* LaunchScreen.storyboard */; };
+		187DC35A26340BE90049F4BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DC35926340BE90049F4BF /* main.m */; };
+		187DC36326340C110049F4BF /* ggwave in Frameworks */ = {isa = PBXBuildFile; productRef = 187DC36226340C110049F4BF /* ggwave */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		187DC34426340BE60049F4BF /* ggwave-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ggwave-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		187DC34726340BE60049F4BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		187DC34826340BE60049F4BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		187DC34A26340BE60049F4BF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		187DC34B26340BE60049F4BF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		187DC34D26340BE60049F4BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		187DC34E26340BE60049F4BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		187DC35126340BE60049F4BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		187DC35326340BE90049F4BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		187DC35626340BE90049F4BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		187DC35826340BE90049F4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187DC35926340BE90049F4BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		187DC34126340BE60049F4BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187DC36326340C110049F4BF /* ggwave in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		187DC33B26340BE60049F4BF = {
+			isa = PBXGroup;
+			children = (
+				187DC34626340BE60049F4BF /* ggwave-objc */,
+				187DC34526340BE60049F4BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		187DC34526340BE60049F4BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				187DC34426340BE60049F4BF /* ggwave-objc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		187DC34626340BE60049F4BF /* ggwave-objc */ = {
+			isa = PBXGroup;
+			children = (
+				187DC34726340BE60049F4BF /* AppDelegate.h */,
+				187DC34826340BE60049F4BF /* AppDelegate.m */,
+				187DC34A26340BE60049F4BF /* SceneDelegate.h */,
+				187DC34B26340BE60049F4BF /* SceneDelegate.m */,
+				187DC34D26340BE60049F4BF /* ViewController.h */,
+				187DC34E26340BE60049F4BF /* ViewController.m */,
+				187DC35026340BE60049F4BF /* Main.storyboard */,
+				187DC35326340BE90049F4BF /* Assets.xcassets */,
+				187DC35526340BE90049F4BF /* LaunchScreen.storyboard */,
+				187DC35826340BE90049F4BF /* Info.plist */,
+				187DC35926340BE90049F4BF /* main.m */,
+			);
+			path = "ggwave-objc";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		187DC34326340BE60049F4BF /* ggwave-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187DC35D26340BE90049F4BF /* Build configuration list for PBXNativeTarget "ggwave-objc" */;
+			buildPhases = (
+				187DC34026340BE60049F4BF /* Sources */,
+				187DC34126340BE60049F4BF /* Frameworks */,
+				187DC34226340BE60049F4BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ggwave-objc";
+			packageProductDependencies = (
+				187DC36226340C110049F4BF /* ggwave */,
+			);
+			productName = "ggwave-objc";
+			productReference = 187DC34426340BE60049F4BF /* ggwave-objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		187DC33C26340BE60049F4BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					187DC34326340BE60049F4BF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 187DC33F26340BE60049F4BF /* Build configuration list for PBXProject "ggwave-objc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 187DC33B26340BE60049F4BF;
+			packageReferences = (
+				187DC36126340C110049F4BF /* XCRemoteSwiftPackageReference "ggwave-spm" */,
+			);
+			productRefGroup = 187DC34526340BE60049F4BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				187DC34326340BE60049F4BF /* ggwave-objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		187DC34226340BE60049F4BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187DC35726340BE90049F4BF /* LaunchScreen.storyboard in Resources */,
+				187DC35426340BE90049F4BF /* Assets.xcassets in Resources */,
+				187DC35226340BE60049F4BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		187DC34026340BE60049F4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187DC34F26340BE60049F4BF /* ViewController.m in Sources */,
+				187DC34926340BE60049F4BF /* AppDelegate.m in Sources */,
+				187DC35A26340BE90049F4BF /* main.m in Sources */,
+				187DC34C26340BE60049F4BF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		187DC35026340BE60049F4BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187DC35126340BE60049F4BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		187DC35526340BE90049F4BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187DC35626340BE90049F4BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		187DC35B26340BE90049F4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		187DC35C26340BE90049F4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		187DC35E26340BE90049F4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8JZH34X63;
+				INFOPLIST_FILE = "ggwave-objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ggerganov.ggwave-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		187DC35F26340BE90049F4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8JZH34X63;
+				INFOPLIST_FILE = "ggwave-objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ggerganov.ggwave-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		187DC33F26340BE60049F4BF /* Build configuration list for PBXProject "ggwave-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187DC35B26340BE90049F4BF /* Debug */,
+				187DC35C26340BE90049F4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187DC35D26340BE90049F4BF /* Build configuration list for PBXNativeTarget "ggwave-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187DC35E26340BE90049F4BF /* Debug */,
+				187DC35F26340BE90049F4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		187DC36126340C110049F4BF /* XCRemoteSwiftPackageReference "ggwave-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ggerganov/ggwave-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		187DC36226340C110049F4BF /* ggwave */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 187DC36126340C110049F4BF /* XCRemoteSwiftPackageReference "ggwave-spm" */;
+			productName = ggwave;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 187DC33C26340BE60049F4BF /* Project object */;
+}
