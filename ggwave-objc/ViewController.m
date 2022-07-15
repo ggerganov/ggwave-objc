@@ -179,11 +179,11 @@ void AudioOutputCallback(void * inUserData,
         const char * payload = kDefaultMessageToSend;
         const int len = (int) strlen(payload);
 
-        const int n = ggwave_encode(stateOut.ggwaveId, payload, len, GGWAVE_TX_PROTOCOL_AUDIBLE_FAST, 10, NULL, 1);
+        const int n = ggwave_encode(stateOut.ggwaveId, payload, len, GGWAVE_PROTOCOL_AUDIBLE_FAST, 10, NULL, 1);
 
         stateOut.waveform = [NSMutableData dataWithLength:sizeof(char)*n];
 
-        const int ret = ggwave_encode(stateOut.ggwaveId, payload, len, GGWAVE_TX_PROTOCOL_AUDIBLE_FAST, 10, [stateOut.waveform mutableBytes], 0);
+        const int ret = ggwave_encode(stateOut.ggwaveId, payload, len, GGWAVE_PROTOCOL_AUDIBLE_FAST, 10, [stateOut.waveform mutableBytes], 0);
 
         if (2*ret != n) {
             printf("failed to encode the message '%s', n = %d, ret = %d\n", payload, n, ret);

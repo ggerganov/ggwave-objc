@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "ggwave",
-        "repositoryURL": "https://github.com/ggerganov/ggwave-spm",
-        "state": {
-          "branch": null,
-          "revision": "c3bf3489f51c320954b45d6d295c030aa636dadf",
-          "version": "0.2.0"
-        }
+  "pins" : [
+    {
+      "identity" : "ggwave-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ggerganov/ggwave-spm",
+      "state" : {
+        "revision" : "5fba9d067bc480910589699d306320f12e8ea814",
+        "version" : "0.4.0"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
