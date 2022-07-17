@@ -41,7 +41,8 @@ void AudioOutputCallback(void * inUserData,
 
 - (void)setupAudioFormat:(AudioStreamBasicDescription*)format
 {
-    format->mSampleRate = 48000.0;
+    //format->mSampleRate = 48000.0; // it seems that sometimes 48kHz is not supported by the device
+    format->mSampleRate = 44100.0;
 	format->mFormatID = kAudioFormatLinearPCM;
 	format->mFramesPerPacket = 1;
 	format->mChannelsPerFrame = 1;
@@ -66,6 +67,9 @@ void AudioOutputCallback(void * inUserData,
     {
         ggwave_Parameters parameters = ggwave_getDefaultParameters();
 
+        // this will cause the ggwave instance to resample the input to the default sample rate (48kHz)
+        parameters.sampleRateInp   = stateInp.dataFormat.mSampleRate;
+
         parameters.sampleFormatInp = GGWAVE_SAMPLE_FORMAT_I16;
         parameters.sampleFormatOut = GGWAVE_SAMPLE_FORMAT_I16;
 
@@ -77,6 +81,9 @@ void AudioOutputCallback(void * inUserData,
     // TX
     {
         ggwave_Parameters parameters = ggwave_getDefaultParameters();
+
+        // this will cause the ggwave instance to resample the output to the configured sample rate
+        parameters.sampleRateOut   = stateOut.dataFormat.mSampleRate;
 
         parameters.sampleFormatInp = GGWAVE_SAMPLE_FORMAT_I16;
         parameters.sampleFormatOut = GGWAVE_SAMPLE_FORMAT_I16;
@@ -185,7 +192,7 @@ void AudioOutputCallback(void * inUserData,
 
         const int ret = ggwave_encode(stateOut.ggwaveId, payload, len, GGWAVE_PROTOCOL_AUDIBLE_FAST, 10, [stateOut.waveform mutableBytes], 0);
 
-        if (2*ret != n) {
+        if (ret > n) {
             printf("failed to encode the message '%s', n = %d, ret = %d\n", payload, n, ret);
             return;
         }
@@ -248,10 +255,11 @@ void AudioInputCallback(void * inUserData,
     char decoded[256];
 
     // analyze captured audio
-    int ret = ggwave_decode(stateInp->ggwaveId, (char *)inBuffer->mAudioData, inBuffer->mAudioDataByteSize, decoded);
+    int ret = ggwave_ndecode(stateInp->ggwaveId, (char *)inBuffer->mAudioData, inBuffer->mAudioDataByteSize, decoded, 256);
 
     // check if a message has been received
     if (ret > 0) {
+        decoded[ret] = 0; // null terminate the string
         stateInp->labelReceived.text = [@"Received: " stringByAppendingString:[NSString stringWithFormat:@"%s", decoded]];
     }
 
