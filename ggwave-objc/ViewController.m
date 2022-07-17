@@ -93,6 +93,9 @@ void AudioOutputCallback(void * inUserData,
         printf("GGWave playback instance initialized - instance id = %d\n", stateOut.ggwaveId);
     }
 
+    // uncomment to disable internal logging from ggwave
+    //ggwave_setLogFile(NULL);
+
     // UI
 
     stateInp.labelReceived = _labelReceived;
